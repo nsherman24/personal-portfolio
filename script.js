@@ -14,27 +14,30 @@ function toggleFullAbout() {
   fullAbout.style.display = fullAbout.style.display === 'none' ? 'block' : 'none';
 }
 
+function toggleDescription(button) {
+  const popup = document.getElementById('descriptionPopup');
+  const descriptionText = popup.querySelector('.description-text');
+  
+  if (popup.style.display === 'flex') {
+    popup.style.display = 'none';
+    button.innerText = 'Description';
+  } else {
+    const description = button.getAttribute('data-description');
+    descriptionText.innerText = description;
+    popup.style.display = 'flex';
+    button.innerText = 'Close';
+  }
+}
+
+
+function closeDescriptionPopup() {
+  const popup = document.getElementById('descriptionPopup');
+  const descriptionBtn = document.querySelector('.description-btn');
+
+  popup.style.display = 'none';
+  descriptionBtn.innerText = 'Description';
+}
+
 // script.js
-
-document.addEventListener('DOMContentLoaded', function() {
-  const descriptionButtons = document.querySelectorAll('.description-btn');
-  const popupContainer = document.querySelector('.popup-container');
-
-  descriptionButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const projectDescription = button.getAttribute('data-description');
-      
-      // Toggle the display of the popup container and overlay
-      if (popupContainer.style.display === 'block') {
-        popupContainer.style.display = 'none';
-      } else {
-        popupContainer.style.display = 'block';
-        // Display the project description inside the popup
-        const popupContent = document.querySelector('.popup-content');
-        popupContent.textContent = projectDescription;
-      }
-    });
-  });
-});
 
 

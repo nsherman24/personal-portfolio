@@ -21,7 +21,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Noah Sherman</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -106,29 +106,19 @@
           <div class="text-container">
             <p>
               I'm pursuing a Bachelor of Science in Information Science with a
-              focus on Data Science and a minor in Computer Science, providing
-              me with a solid foundation in both theoretical and practical
-              aspects of data and computer science. Currently, I'm seeking
-              internship opportunities in software development and information
-              systems, but my ultimate goal lies in delving deeper into data
-              science. I plan to enhance my skills in this area over the next
-              few years and then pursue a master's in Information Science with a
-              focus on machine learning. The recent advancements in AI tools,
-              automation, and workflows have captivated my interest, and I'm
-              eager to contribute to this rapidly evolving field. Beyond my
-              professional pursuits, I love soccer and am a devoted FC Barcelona
-              fan, finding inspiration in the creativity, strategy, and
-              perseverance of the sport. Additionally, I have a passion for
-              writing and journalism, allowing me to creatively express my
-              thoughts and ideas. What sets me apart is my unique blend of
-              technical expertise and creative thinking. With a background in
-              information science, computer science, and a passion for writing,
-              I approach problems from diverse perspectives and effectively
-              communicate complex concepts. Driven by curiosity, I'm always
-              seeking new challenges and opportunities to learn and grow. Thank
-              you for visiting my portfolio. I'm excited about the possibility
-              of connecting and exploring collaborations in the fields of data
-              science and technology.
+              focus on Data Science and minor in Computer Science. Currently,
+              I'm seeking internship opportunities in software development and
+              information systems, but my ultimate goal lies in delving deeper
+              into data science. I plan to enhance my skills in this area over
+              the next couple of years and then pursue a master's in Information
+              Science with a focus on machine learning. Beyond my professional
+              pursuits, I love soccer and am a devoted FC Barcelona fan. I also
+              have a passion for writing and journalism, allowing me to
+              creatively express my thoughts and ideas. I'm
+              always seeking new challenges and opportunities to learn and grow.
+              Thank you for visiting my portfolio. I'm excited about the
+              possibility of connecting and exploring collaborations in the
+              fields of data science and technology.
             </p>
           </div>
         </div>
@@ -210,29 +200,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Jupyter Notebooks</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
                   <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Debugging</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -292,7 +260,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>R(Statistical computing)</h3>
+                  <h3>R(Statistical Computing)</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -341,18 +309,19 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn description-btn"
-                data-description="Led a team of 8 students in developing a comprehensive hotel management website,
-                                   spearheading the creative design while providing guidance on HTML, CSS, and
-                                   JavaScript implementation. Solely led the creative design process, from conceptualizing
-                                   the mock company identity to designing the logo. Additionally, took the initiative to
-                                   teach inexperienced team members how to effectively collaborate using Git, ensuring
-                                   seamless integration of their contributions. Implemented input validation using JavaScript
-                                   to guarantee the integrity of critical features such as the booking form, exemplifying
-                                   attention to detail and problem-solving skills. Overall, orchestrated a collaborative
-                                   effort that resulted in a polished website with cohesive user experience across all pages."
+                onclick="toggleDescription(this)"
+                data-description="Led a team of 8 students in developing a comprehensive hotel management website, spearheading the creative design while providing guidance on HTML, CSS, and JavaScript implementation. Solely led the creative design process, from conceptualizing the mock company identity to designing the logo. Additionally, took the initiative to teach inexperienced team members how to effectively collaborate using Git, ensuring seamless integration of their contributions. Implemented input validation using JavaScript to guarantee the integrity of critical features such as the booking form, exemplifying attention to detail and problem-solving skills. Overall, orchestrated a collaborative effort that resulted in a polished website with cohesive user experience across all pages."
               >
                 Description
               </button>
+            </div>
+            <div class="description-popup" id="descriptionPopup">
+              <div class="description-content">
+                <span class="close-btn" onclick="closeDescriptionPopup()"
+                  >&times;</span
+                >
+                <p class="description-text"></p>
+              </div>
             </div>
           </div>
           <div class="details-container color-container">
@@ -373,22 +342,19 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn description-btn"
-                data-description="I conducted a thorough analysis of English Premier League matches from the
-                                 2018-2019 season, focusing on three pivotal patterns and creating figures to represent the relationshps found. Firstly, I checked the
-                                 relationship between team fouls and the resulting cards received, with a particular
-                                 focus on the widely acknowledged 'top 6' teams. The aim was to challenge the perceived
-                                 referee bias towards these prominent teams. Secondly, I investigated the accuracy of match
-                                 outcome predictions derived from betting odds, segmenting them into distinct ranges to
-                                 assess their predictive efficacy. Lastly, I delved into the connection between
-                                 possession and shots, employing visual representations to illustrate how possession impacts
-                                 both the quantity and quality of shots taken. Through these analyses and visualizations, I 
-                                offered valuable insights into the dynamics of Premier League matches, shedding light
-                                 on bias detection, statistical determinants of match outcomes, and strategic gameplay. This
-                                 demonstrates my proficiency in data analysis and visualization techniques, providing
-                                 a comprehensive understanding of football dynamics at the highest level."
+                onclick="toggleDescription(this)"
+                data-description="I conducted a thorough analysis of English Premier League matches from the 2018-2019 season, focusing on three pivotal patterns and creating figures to represent the relationships found. Firstly, I checked the relationship between team fouls and the resulting cards received, with a particular focus on the widely acknowledged 'top 6' teams. The aim was to challenge the perceived referee bias towards these prominent teams. Secondly, I investigated the accuracy of match outcome predictions derived from betting odds, segmenting them into distinct ranges to assess their predictive efficacy. Lastly, I delved into the connection between possession and shots, employing visual representations to illustrate how possession impacts both the quantity and quality of shots taken. Through these analyses and visualizations, I  offered valuable insights into the dynamics of Premier League matches, shedding light on bias detection, statistical determinants of match outcomes, and strategic gameplay. This demonstrates my proficiency in data analysis and visualization techniques, providing a comprehensive understanding of football dynamics at the highest level."
               >
                 Description
               </button>
+            </div>
+            <div class="description-popup" id="descriptionPopup">
+              <div class="description-content">
+                <span class="close-btn" onclick="closeDescriptionPopup()"
+                  >&times;</span
+                >
+                <p class="description-text"></p>
+              </div>
             </div>
           </div>
           <div class="details-container color-container">
@@ -409,18 +375,19 @@
               </button>
               <button
                 class="btn btn-color-2 project-btn description-btn"
-                data-description="I developed a Texas Hold'em poker game in Java, complete with classes such as Card
-                                  , Dealer, Game, Player, and PokerHand. Each class encapsulates both data and behavior,
-                                   promoting modular and maintainable code. Leveraging abstraction, the project hides 
-                                  complex implementation details behind intuitive interfaces. Notable features include a
-                                   comprehensive hand ranking system, efficient algorithms for determining winning hands,
-                                   and interactive gameplay facilitated by user input. Rigorous testing ensures accuracy
-                                   and reliability, while clear code structure promotes maintainability and extensibility.
-                                   This project demonstrates my proficiency in Java programming, algorithmic thinking, and
-                                   software design, showcasing my ability to create engaging applications. "
+                onclick="toggleDescription(this)"
+                data-description="I developed a Texas Hold'em poker game in Java, complete with classes such as Card, Dealer, Game, Player, and PokerHand. Each class encapsulates both data and behavior, promoting modular and maintainable code. Leveraging abstraction, the project hides complex implementation details behind intuitive interfaces. Notable features include a comprehensive hand ranking system, efficient algorithms for determining winning hands, and interactive gameplay facilitated by user input. Rigorous testing ensures accuracy and reliability, while clear code structure promotes maintainability and extensibility. This project demonstrates my proficiency in Java programming, algorithmic thinking, and software design, showcasing my ability to create engaging applications."
               >
                 Description
               </button>
+            </div>
+            <div class="description-popup" id="descriptionPopup">
+              <div class="description-content">
+                <span class="close-btn" onclick="closeDescriptionPopup()"
+                  >&times;</span
+                >
+                <p class="description-text"></p>
+              </div>
             </div>
           </div>
         </div>
@@ -451,7 +418,11 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/noah-malcolm-sherman-7a67192a9">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/noah-malcolm-sherman-7a67192a9"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
