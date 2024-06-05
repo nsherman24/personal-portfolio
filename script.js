@@ -25,7 +25,6 @@ function toggleDescription(button) {
     const description = button.getAttribute('data-description');
     descriptionText.innerText = description;
     popup.style.display = 'flex';
-    button.innerText = 'Close';
   }
 }
 
